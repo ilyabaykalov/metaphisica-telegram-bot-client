@@ -1,0 +1,17 @@
+.projectInfo {
+  display: flex;
+  width: 450px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  flex-direction: column;
+  font-weight: bold;
+
+  & > span {
+    width: inherit;
+  }
+
+  & > span:last-child {
+    margin-top: 10px;
+  }
+}

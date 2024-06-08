@@ -1,0 +1,13 @@
+@import '@stylesheets/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Jura, monospace;
+}
+
+body {
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+}

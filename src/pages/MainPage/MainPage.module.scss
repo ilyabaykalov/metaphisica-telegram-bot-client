@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  & > .logo {
+    width: 500px;
+    margin: 30px auto;
+  }
+
+  & > .title {
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  & > .subtitle {
+    width: 300px;
+    margin: 0 auto 25px;
+    text-align: center;
+    font-size: medium;
+  }
+
+  & > .sectionTitle {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  & > .jsConsoleButton {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: #eded0d;
+    color: #323232;
+
+    &:hover {
+      background-color: darken(#eded0d, 5%);
+    }
+  }
+
+  & > .siteButton {
+    position: absolute;
+    bottom: 100px;
+    left: 130px;
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: #20982A;
+    color: #323232;
+
+    &:hover {
+      background-color: darken(#20982A, 5%);
+    }
+  }
+}
