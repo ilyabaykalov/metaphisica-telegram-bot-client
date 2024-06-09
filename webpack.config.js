@@ -59,6 +59,7 @@ export default (_, argv) => {
 				'@store': resolve('src/store'),
 				'@store/*': resolve('src/store/*'),
 				'@reducers': resolve('src/store/reducers'),
+				'@hooks': resolve('src/hooks'),
 				'@utils': resolve('src/utils'),
 				'@stylesheets': resolve('src/stylesheets'),
 			},

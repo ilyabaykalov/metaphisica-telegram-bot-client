@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 
-import { Header, Catalog } from '@components';
+import { useTelegram } from '@hooks';
 
-const tg = window.Telegram.WebApp;
+import { Catalog, Header } from '@components';
 
 const MainPage = () => {
+	const { onReady } = useTelegram();
+
 	useEffect(() => {
-		tg.ready();
+		onReady();
 	}, []);
 
 	return (

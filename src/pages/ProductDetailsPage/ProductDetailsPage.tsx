@@ -1,19 +1,22 @@
 import React, { useEffect } from 'react';
 
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { PATHS } from '@router';
 
 import { useSelector } from 'react-redux';
+
+import { useTelegram } from '@hooks';
 
 import { Header } from '@components';
 
 import { ProductProperties, State } from '@interfaces';
-import styles from './ProductDetailsPage.module.scss';
-import { PATHS } from '@router';
 
-const tg = window.Telegram.WebApp;
+import RubleIcon from '@mui/icons-material/CurrencyRuble';
+
+import styles from './ProductDetailsPage.module.scss';
 
 export const ProductDetailsPage = () => {
-	const navigate = useNavigate();
+	const { setBackButton, onReady } = useTelegram();
 
 	const { productId } = useParams();
 
@@ -21,14 +24,14 @@ export const ProductDetailsPage = () => {
 		productState.products.find(({ id }) => Number(productId) === id));
 
 	useEffect(() => {
-		tg.ready();
+		onReady();
 
-		tg.BackButton.show();
+		setBackButton(PATHS.catalog);
 	}, []);
 
-	tg.onEvent('backButtonClicked', () => {
-		navigate(PATHS.catalog);
-	});
+	const onBuyButtonClickHandler = () => {
+
+	};
 
 	return (
 		<>
@@ -36,6 +39,7 @@ export const ProductDetailsPage = () => {
 
 			<img className={ styles.image } src={ product.image } alt={ product.title }/>
 			<h1>{ product.title }</h1>
+			<span className={styles.price}>{ product.price }<RubleIcon/></span>
 			{/* <div className={ styles.card }> */ }
 			{/* <p className={styles.title}>{ product.title }</p> */ }
 			{/* <p className={styles.price}>Цена: { product.price }₽</p> */ }
@@ -45,7 +49,7 @@ export const ProductDetailsPage = () => {
 				</p>
 			)) }
 
-			{/* <button className={styles.button}>Добавить в корзину</button> */ }
+			<button className={styles.button} onClick={onBuyButtonClickHandler}>Купить</button>
 			{/* </div> */ }
 		</>
 	);

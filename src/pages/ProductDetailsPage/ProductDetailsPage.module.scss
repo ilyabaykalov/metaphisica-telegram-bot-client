@@ -32,16 +32,16 @@
 }
 
 .description {
-  color: #cacaca;
+  color: #dfdfdf;
   font-size: 1em;
   text-indent: 1.5em;
 }
 
 .price {
-  color: #666;
-  font-size: .8rem;
+  font-size: 1.7rem;
   cursor: default;
-  margin: 10px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: 901px) and (max-width: 1200px) {
     font-size: 1.75rem;
@@ -52,7 +52,9 @@
   height: 40px;
   width: 100%;
   border: none;
-  font-size: .9rem;
+  font-size: 1rem;
+  //position: absolute;
+  //bottom: 0;
   border-radius: 5px;
   background-color: #3d3f4a;
   color: #fff;
