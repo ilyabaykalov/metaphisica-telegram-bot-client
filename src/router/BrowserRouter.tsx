@@ -6,7 +6,7 @@ import { LoggerPage, MainPage } from '@pages';
 import { PATHS } from './paths';
 
 const BrowserRouter = createBrowserRouter([
-	{ path: PATHS.root, element: <MainPage title={ 'Terminal' }/> },
+	{ path: PATHS.root, element: <MainPage/> },
 	{ path: PATHS.catalina, element: <LoggerPage/> },
 	{ path: PATHS.localhost_access, element: <LoggerPage/> },
 	{ path: PATHS.alfresco, element: <LoggerPage/> },

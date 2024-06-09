@@ -1,5 +1,5 @@
 export const PATHS = {
-	root: '/metaphysica-telegram-bot-client',
+	root: '/catalog',
 	catalina: '/logs/catalina',
 	localhost_access: '/logs/localhost-access',
 	alfresco: '/logs/alfresco',
