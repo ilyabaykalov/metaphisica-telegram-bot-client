@@ -1,1 +1,3 @@
-export { CatalogItemProperties } from './CatalogItem';
+export { ProductProperties, ProductsProperties } from './ProductProperties';
+
+export { State } from './State';
