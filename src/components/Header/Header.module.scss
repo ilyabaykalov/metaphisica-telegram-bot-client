@@ -1,0 +1,14 @@
+.header {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  width: 100%;
+
+  & > img{
+    width: inherit;
+
+    @media (min-width: 901px) and (max-width: 1200px) {
+      width: calc(100% - 40px);
+    }
+  }
+}

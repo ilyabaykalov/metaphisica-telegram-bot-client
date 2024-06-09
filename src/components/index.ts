@@ -10,6 +10,8 @@ export { LogButton, ScriptButton } from './Button';
 
 export { ConfirmDialog } from './ConfirmDialog';
 
+export { Header } from './Header';
+
 export { Catalog } from './Catalog';
 
 export { CatalogItem } from './CatalogItem';
