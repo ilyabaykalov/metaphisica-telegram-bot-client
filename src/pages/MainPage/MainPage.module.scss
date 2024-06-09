@@ -1,62 +1,123 @@
-.container {
-  display: flex;
-  flex-direction: column;
+//.container {
+//  display: flex;
+//  flex-direction: column;
+//
+//  & > .logo {
+//    width: 500px;
+//    margin: 30px auto;
+//  }
+//
+//  & > .title {
+//    width: 300px;
+//    margin: 10px auto;
+//    text-align: center;
+//    font-size: xx-large;
+//  }
+//
+//  & > .subtitle {
+//    width: 300px;
+//    margin: 0 auto 25px;
+//    text-align: center;
+//    font-size: medium;
+//  }
+//
+//  & > .sectionTitle {
+//    width: 300px;
+//    margin: 5px auto;
+//    text-align: center;
+//    font-size: x-large;
+//  }
+//
+//  & > .jsConsoleButton {
+//    position: absolute;
+//    bottom: 100px;
+//    left: 20px;
+//    height: 90px;
+//    width: 90px;
+//    border-radius: 10px;
+//    border: none;
+//    background-color: #eded0d;
+//    color: #323232;
+//
+//    &:hover {
+//      background-color: darken(#eded0d, 5%);
+//    }
+//  }
+//
+//  & > .siteButton {
+//    position: absolute;
+//    bottom: 100px;
+//    left: 130px;
+//    height: 90px;
+//    width: 90px;
+//    border-radius: 10px;
+//    border: none;
+//    background-color: #20982A;
+//    color: #323232;
+//
+//    &:hover {
+//      background-color: darken(#20982A, 5%);
+//    }
+//  }
+//}
+//body, html {
+//  margin: 0;
+//  padding: 0;
+//  width: 100%;
+//  font-family: Arial, sans-serif;
+//  background-color: #f0f0f0;
+//}
 
-  & > .logo {
-    width: 500px;
-    margin: 30px auto;
-  }
-
-  & > .title {
-    width: 300px;
-    margin: 10px auto;
-    text-align: center;
-    font-size: xx-large;
-  }
-
-  & > .subtitle {
-    width: 300px;
-    margin: 0 auto 25px;
-    text-align: center;
-    font-size: medium;
-  }
-
-  & > .sectionTitle {
-    width: 300px;
-    margin: 5px auto;
-    text-align: center;
-    font-size: x-large;
-  }
-
-  & > .jsConsoleButton {
-    position: absolute;
-    bottom: 100px;
-    left: 20px;
-    height: 90px;
-    width: 90px;
-    border-radius: 10px;
-    border: none;
-    background-color: #eded0d;
-    color: #323232;
-
-    &:hover {
-      background-color: darken(#eded0d, 5%);
-    }
-  }
-
-  & > .siteButton {
-    position: absolute;
-    bottom: 100px;
-    left: 130px;
-    height: 90px;
-    width: 90px;
-    border-radius: 10px;
-    border: none;
-    background-color: #20982A;
-    color: #323232;
-
-    &:hover {
-      background-color: darken(#20982A, 5%);
-    }
-  }
-}
+//.catalog {
+//  display: grid;
+//  grid-template-columns: repeat(2, 1fr); // две колонки
+//  gap: 20px;
+//  padding: 20px;
+//
+//  .card {
+//    background-color: #fff;
+//    border-radius: 10px;
+//    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//    overflow: hidden;
+//    max-width: 300px;
+//    text-align: center;
+//
+//    &Image {
+//      width: 100%;
+//      height: auto;
+//    }
+//
+//    &Content {
+//      padding: 15px;
+//    }
+//
+//    &Title {
+//      color: #666;
+//      font-weight: 100;
+//      font-size: 1.2em;
+//      margin: 5px 0;
+//    }
+//
+//    &Description {
+//      color: #666;
+//      font-size: 1em;
+//      margin-bottom: 1em;
+//    }
+//
+//    &Price {
+//      color: #333;
+//      font-size: 1.1em;
+//      font-weight: bold;
+//    }
+//
+//    &BuyButton {
+//      width: calc(100% - 4 * 2 * 10px);
+//      height: 30px;
+//      margin: 10px;
+//      border: none;
+//      border-radius: 5px;
+//      background-color: #3d3f4a;
+//      color: #fff;
+//    }
+//  }
+//}
