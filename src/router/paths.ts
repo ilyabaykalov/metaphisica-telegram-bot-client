@@ -1,3 +1,4 @@
 export const PATHS = {
-	root: '/catalog',
+	catalog: '/catalog',
+	product: '/product/:productId',
 };

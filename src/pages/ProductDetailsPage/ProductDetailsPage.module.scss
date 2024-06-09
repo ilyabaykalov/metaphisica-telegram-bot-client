@@ -1,0 +1,69 @@
+//.card {
+//  background-color: #fff;
+//  border-radius: 10px;
+//  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//  overflow: hidden;
+//  text-align: center;
+//  padding: 20px;
+//
+//  @media (min-width: 901px) and (max-width: 1200px) {
+//    border-radius: 20px;
+//    padding: 40px;
+//  }
+
+.image {
+  width: 100%;
+  //height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.title {
+  color: #666;
+  font-weight: 100;
+  cursor: default;
+  margin: 0;
+  font-size: 1.75rem;
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    font-size: 4rem;
+  }
+}
+
+.description {
+  color: #cacaca;
+  font-size: 1em;
+  text-indent: 1.5em;
+}
+
+.price {
+  color: #666;
+  font-size: .8rem;
+  cursor: default;
+  margin: 10px;
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    font-size: 1.75rem;
+  }
+}
+
+.button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  font-size: .9rem;
+  border-radius: 5px;
+  background-color: #3d3f4a;
+  color: #fff;
+  cursor: pointer;
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    height: 70px;
+    width: calc(100% - 2 * 10px);
+    font-size: 1.75rem;
+    border-radius: 10px;
+  }
+}
+
+//}

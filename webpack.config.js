@@ -36,7 +36,7 @@ export default (_, argv) => {
 		},
 		context: resolve('src'),
 		output: {
-			publicPath: '',
+			publicPath: '/',
 			filename: filename('js'),
 			path: resolve('dist'),
 		},
