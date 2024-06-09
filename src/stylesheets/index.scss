@@ -7,7 +7,16 @@
   font-family: Jura, monospace;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: var(--tg-theme-bg-color);
   color: var(--tg-theme-text-color);
+
+  // mobile
+  @media (min-width: 901px) and (max-width: 1200px) {
+    font-size: 4rem;
+  }
 }
