@@ -1,8 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 
-import { ProductProperties } from '@interfaces';
-import { axios } from '@utils';
-
 const telegram = window.Telegram.WebApp;
 
 export const useTelegram = () => {
