@@ -9,3 +9,7 @@ export { LogButtonSection, ScriptButtonSection } from './ButtonSection';
 export { LogButton, ScriptButton } from './Button';
 
 export { ConfirmDialog } from './ConfirmDialog';
+
+export { Catalog } from './Catalog';
+
+export { CatalogItem } from './CatalogItem';
